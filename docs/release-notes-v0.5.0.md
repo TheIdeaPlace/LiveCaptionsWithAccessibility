@@ -33,7 +33,7 @@ on those machines.
   on x64. The other three engines are all present. An installer that cannot be tested
   is worse than no installer.
 - If it works — or if it doesn't — please
-  [open an issue](https://github.com/kellylford/LiveCaptionsWithAccessibility/issues).
+  [open an issue](https://github.com/TheIdeaPlace/LiveCaptionsWithAccessibility/issues).
   A report from an actual x64 machine is the only thing that can move this from
   experimental to supported.
 
@@ -104,7 +104,7 @@ package-deployment queue rather than this download — a reboot clears it. A hea
 install of this package takes under a second, since it has no downloadable
 dependencies, so any wait beyond a few seconds means something else is holding the
 queue. The
-[project status document](https://github.com/kellylford/LiveCaptionsWithAccessibility/blob/main/docs/ProjectStatus.md)
+[project status document](https://github.com/TheIdeaPlace/LiveCaptionsWithAccessibility/blob/main/docs/ProjectStatus.md)
 explains how to confirm that from the event log.
 
 ### Known limitations
@@ -123,4 +123,4 @@ explains how to confirm that from the event log.
   line reports progress.
 
 Full documentation is in the
-[user guide](https://github.com/kellylford/LiveCaptionsWithAccessibility/blob/main/docs/UserGuide.md).
+[user guide](https://github.com/TheIdeaPlace/LiveCaptionsWithAccessibility/blob/main/docs/UserGuide.md).

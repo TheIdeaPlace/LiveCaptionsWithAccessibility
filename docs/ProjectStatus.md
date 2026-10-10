@@ -27,7 +27,7 @@ Microsoft — it is a proof that this is straightforward on a Copilot+ PC today.
 
 | | |
 |---|---|
-| Repo | `kellylford/LiveCaptionsWithAccessibility` |
+| Repo | `TheIdeaPlace/LiveCaptionsWithAccessibility` (moved from kellylford on 2026-10-10) |
 | Current release | **v0.4.0** — signed MSIX + signed portable zip |
 | Runtime | **.NET 10 LTS** (built with SDK 10.0.302) |
 | Architecture | **win-arm64 verified**; win-x64 built but never run on real hardware — see §7 and §8.1 |
@@ -135,14 +135,18 @@ How signing works — no certificate or long-lived secret exists anywhere:
    certificate profile `kellyford-public`.
 
 The Azure side is an app registration named **`github-artifact-signing`**, which holds
-one federated credential per repo. This repo has two, matching the established
-pattern: a plain subject and an "immutable" one using GitHub's numeric IDs so a repo
-rename does not break signing.
+one federated credential per repo. The one that matters is the "immutable" subject, which
+uses GitHub's numeric IDs for the owner and the repo. When the repo moved from kellylford to
+the TheIdeaPlace org (owner id 340125137) on 2026-10-10, that credential,
+`gh-livecaptions-immutable`, was edited in place to:
 
 ```
-repo:kellylford/LiveCaptionsWithAccessibility:environment:azure-signing
-repo:kellylford@44002405/LiveCaptionsWithAccessibility@1292520798:environment:azure-signing
+repo:TheIdeaPlace@340125137/LiveCaptionsWithAccessibility@1292520798:environment:azure-signing
 ```
+
+A signed manual run of the Release workflow proved it the same day. The older plain-subject
+credential (`gh-livecaptions-signing`, `repo:kellylford/...`) no longer matches anything, and
+can be deleted in the credential cleanup (The-Idea-Place-Projects#10).
 
 **Order matters and is deliberate:** payload executables are signed *before*
 `makeappx pack`, and the `.msix` is signed *after*, because the package signature
