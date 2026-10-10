@@ -53,7 +53,7 @@ panel reviewable.
 
 ## Install
 
-From the [Releases page](https://github.com/kellylford/LiveCaptionsWithAccessibility/releases),
+From the [Releases page](https://github.com/TheIdeaPlace/LiveCaptionsWithAccessibility/releases),
 both downloads code-signed:
 
 | Download | What you get |

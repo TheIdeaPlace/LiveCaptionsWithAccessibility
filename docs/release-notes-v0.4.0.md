@@ -81,7 +81,7 @@ package-deployment queue rather than this download — a reboot clears it. A hea
 install of this package takes under a second, since it has no downloadable
 dependencies, so any wait beyond a few seconds means something else is holding the
 queue. The
-[project status document](https://github.com/kellylford/LiveCaptionsWithAccessibility/blob/main/docs/ProjectStatus.md)
+[project status document](https://github.com/TheIdeaPlace/LiveCaptionsWithAccessibility/blob/main/docs/ProjectStatus.md)
 explains how to confirm that from the event log.
 
 ### Known limitations
@@ -98,4 +98,4 @@ explains how to confirm that from the event log.
   line reports progress.
 
 Full documentation is in the
-[user guide](https://github.com/kellylford/LiveCaptionsWithAccessibility/blob/main/docs/UserGuide.md).
+[user guide](https://github.com/TheIdeaPlace/LiveCaptionsWithAccessibility/blob/main/docs/UserGuide.md).

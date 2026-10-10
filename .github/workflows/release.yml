@@ -17,7 +17,8 @@ name: Release
 # Artifact Signing, with no certificate or long-lived secret stored anywhere.
 # It needs three repository secrets — AZURE_CLIENT_ID, AZURE_TENANT_ID,
 # AZURE_SUBSCRIPTION_ID — and an Azure federated credential trusting the subject
-# repo:kellylford/LiveCaptionsWithAccessibility:environment:azure-signing.
+# repo:TheIdeaPlace@340125137/LiveCaptionsWithAccessibility@1292520798:environment:azure-signing
+# (the numeric-id form; the repo moved from kellylford to the TheIdeaPlace org on 2026-10-10).
 # If the secrets are absent the workflow still publishes, unsigned, and says so.
 
 # Run it manually (Actions ▸ Release ▸ Run workflow) to build and sign WITHOUT
