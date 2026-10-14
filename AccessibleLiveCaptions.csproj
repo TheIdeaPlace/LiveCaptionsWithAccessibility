@@ -36,7 +36,7 @@
     <!-- Offline mic-only quick engine -->
     <PackageReference Include="System.Speech" Version="10.0.12" />
     <!-- System-audio + microphone capture (WASAPI); pure-managed, works on ARM64 -->
-    <PackageReference Include="NAudio" Version="2.3.0" />
+    <PackageReference Include="NAudio" Version="2.4.0" />
     <!-- On-device high-accuracy speech-to-text; CPU runtime supports win-arm64 -->
     <PackageReference Include="Whisper.net" Version="1.9.1" />
     <PackageReference Include="Whisper.net.Runtime" Version="1.9.1" />
