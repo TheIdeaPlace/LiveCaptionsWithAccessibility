@@ -44,7 +44,7 @@
          runtime is architecture-pinned, so the package name tracks $(RuntimeIdentifier):
          org.k2fsa.sherpa.onnx.runtime.win-arm64 / ...win-x64. -->
     <PackageReference Include="org.k2fsa.sherpa.onnx" Version="2.0.1" />
-    <PackageReference Include="org.k2fsa.sherpa.onnx.runtime.$(RuntimeIdentifier)" Version="1.13.8" />
+    <PackageReference Include="org.k2fsa.sherpa.onnx.runtime.$(RuntimeIdentifier)" Version="2.0.1" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(WindowsAI)' == 'true'">
